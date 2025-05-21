@@ -1,0 +1,192 @@
+.Brand-Header{
+    color: #096B68;
+    margin-top: 0.4rem;
+    margin-bottom: auto;
+    font-family: "Exile", system-ui;
+    font-weight: 400;
+  
+}
+
+.Footer-End{
+    color: #096B68;
+}
+
+#Input{
+margin-top: 2rem;
+flex-basis: 480px;
+align-self: flex-start;
+margin-bottom: 1.5rem;
+}
+.Blog-Input{
+    display: flex;
+    flex: 1;
+    gap: 25px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+textarea::placeholder{
+    font-size: 2rem;
+    display: flex;
+    padding-left: 2rem;
+    padding-right:2rem ;    
+}
+textarea#Input{
+    font-family: "merriweather", sans-serif !important ;
+    border: 4px double gray;
+     width: 480px !important;
+     margin-bottom: 5px !important;
+     font-size: 1.15rem !important;
+     color:black;
+     line-height: 1.8rem;
+     margin-top: 1rem;
+}
+
+textarea:focus{
+    outline: gray;
+}
+#Submit{
+    margin-bottom: 1.5rem;
+   
+}
+.submit-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    
+}
+
+.character-para{
+align-self: center;
+font-size: 1.2rem;
+}
+
+div.Blog-Title{
+    margin-top: 1rem !important;
+    height: 25px;
+}
+
+.btd{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 25rem;
+    height: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+}
+.bt{
+    height: 3rem;
+    font-size: 1.4rem;
+}
+.bt::placeholder{
+    margin-top: 0.2rem;
+    font-size: 1.5rem;;
+}
+
+.Blog-Links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: auto ;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+}
+.blog-para{
+    display: flex;
+     font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+    width: 72%;
+    font-size: 1.15rem;
+}
+
+.bi{
+    flex-direction: row;
+    margin-bottom: 4rem;
+    display: flex;
+    /* height: 55%; */
+    flex: 1;
+    
+}
+
+.content-display-title{
+    margin-top: 2.5rem;
+    width: 100%;
+}
+
+.tools{
+    display: flex;
+    width: 72%;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+ .blog-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    width: 100%;
+ }
+
+ .blog-nav,.Blog-Links{
+    gap: 1px;
+ }
+
+ button{
+    border-style: none;
+    background-color: white;
+ }
+ .apology-content{
+  display: none; /* Hidden by default */
+  height: 100vh;
+  width: 100%;
+  background-color: #f8f9fa;
+  color: #333;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+ }
+
+ .apology-header{
+     font-family: "Corben", sans-serif;
+  font-size: 2rem;
+  line-height: 1.4;
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+ }
+
+ @media(max-width:590px){
+    .main{
+        display: none;
+        margin-bottom: 0;
+    }
+    .apology-content{
+        display: flex;
+    }
+ }

@@ -1,0 +1,21 @@
+<%-include("partials/header.ejs")  %>
+
+<div class="container bi">
+    <div>
+<h3 class="content-display-title "><%= url.title %></h3>
+<p class="blog-para"><%=url.content %></p>
+
+<div class="tools">
+<a href="/blog/<%=id %>/edit" class="btn btn-primary btn-md rm-2">Edit</a>
+<form action="/blog/<%=id%>/delete" method="POST" ><button type="submit" class="btn btn-outline-dark">Remove</button></form>
+</div>
+</div>
+<div class="blog-nav">
+    <h3 >Your Blogs</h3>
+    <% for(let id in blogs){ %>
+  <a href="/blog/<%=id %>" class="blog-display"><%= blogs[id].title %></a>
+  <% } %>
+</div>
+</div> 
+
+<%-include("partials/footer.ejs")  %>

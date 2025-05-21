@@ -1,0 +1,28 @@
+<%- include("partials/header.ejs") %>
+ 
+      <div class=" container Blog-Input ">
+       <form action="/blog/<%=id %>/edit" method="POST">
+        <div  class="btd">
+        <input name="title" type="text" value="<%=blogs[id].title  %>" placeholder="Blog-Title" width="20px" class="bt" required></input>
+    </div>
+    <textarea placeholder="Write Here." name="Blog" id="Input" required><%= blogs[id].content %></textarea>
+    <div class="submit-wrapper">
+       
+    <input type="submit" name="Blog-submit" id="Submit" class="btn btn-primary" >
+    <p class="character-para">You have <span class="cp">500</span> Characters Remaining.</p>
+</div>
+
+</form> 
+
+<% if(clicked){ %>
+<div class="Blog-Links">
+    <h3 >Your Blogs</h3>
+    <% for(let id in blogs){ %>
+  <a href="/blog/<%= id %>" class="blog-display"><%= blogs[id].title %></a>
+  <% } %>
+</div>
+    <% } %>
+<% console.log(locals.clicked) %>
+    </div>
+<%- include("partials/footer.ejs") %>
+
