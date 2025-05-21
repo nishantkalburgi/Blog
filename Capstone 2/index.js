@@ -1,7 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 const app = express();
-const port=3000;
+const PORT=process.env.PORT || 3000;
 import { v4 as uuidv4 } from 'uuid';
 var blogs={};
 var clicked=false;
@@ -62,6 +62,6 @@ app.post("/blog/:id/delete",(req,res)=>{
         
     }
 })
-app.listen(port,()=>{
-    console.log(`Server is Running on Port ${port}`)
+app.listen(PORT,()=>{
+    console.log(`Server is Running on Port ${PORT}`)
 });
